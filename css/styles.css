@@ -59,3 +59,19 @@ h3 {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Icons */
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-container {
+  background-color: var(--color-accent);
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
