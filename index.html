@@ -13,10 +13,40 @@
     />
   </head>
   <body>
-    <span class="icon-container">
-      <svg class="icon">
-        <use xlink:href="images/sprite.svg#down-chevron"></use>
-      </svg>
-    </span>
+    <div class="grid grid--cols-2">
+      <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+          <h2 class="collapsible__heading">Category</h2>
+          <span class="icon-container">
+            <svg class="icon collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </span>
+        </header>
+        <div class="collapsible__content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            est nemo quibusdam eos, eum debitis!
+          </p>
+        </div>
+      </div>
+      <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+          <h2 class="collapsible__heading">Category</h2>
+          <span class="icon-container">
+            <svg class="icon collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </span>
+        </header>
+        <div class="collapsible__content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            est nemo quibusdam eos, eum debitis!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

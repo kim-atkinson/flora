@@ -52,11 +52,13 @@ h3 {
 /* Grids */
 .grid {
   display: grid;
+  row-gap: 32px;
 }
 
 @media screen and (min-width: 768px) {
   .grid--cols-2 {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
   }
 }
 
@@ -74,4 +76,36 @@ h3 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: ease-in 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
