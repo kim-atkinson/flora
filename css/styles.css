@@ -1,3 +1,33 @@
+:root {
+  --color-primary: #154363;
+  --color-secondary: #313848;
+  --color-accent: #f7c6e1;
+  --color-headings: #1b0760;
+  --color-body: #222222;
+  --color-body-light: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: gold;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--color-body);
+}
+
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
 }
