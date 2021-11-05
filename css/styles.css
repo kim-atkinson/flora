@@ -218,7 +218,7 @@ p {
 
 .menu-heading {
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-body-light);
   font-size: 4.8rem;
 }
 
@@ -238,15 +238,24 @@ p {
 .banner {
   background-image: url(../images/Banner.jpg);
   background-repeat: no-repeat;
+  width: 100%;
+}
+
+.banner-image {
+  position: relative;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 1440px;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 48px;
+  padding: 20px;
+  text-align: center;
 }
 
 .banner__title {
@@ -256,6 +265,55 @@ p {
   text-shadow: 1px 1px 1px #000;
 }
 
-img {
+.hero {
+  position: relative;
   width: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+
+  color: white;
+  font-size: 2rem;
+  padding: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  text-transform: uppercase;
+  color: var(--color-body-light);
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+}
+
+/* Media Queries  */
+
+@media screen and (min-width: 768px) {
+  .hero-heading {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .hero-heading {
+    font-size: 5.8rem;
+  }
+}
+
+.grid-image {
+  max-width: 600px;
 }
