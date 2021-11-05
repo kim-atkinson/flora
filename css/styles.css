@@ -35,12 +35,21 @@ h3 {
   margin: 0;
 }
 
+h3 {
+  font-size: 4rem;
+  color: var(--color-primary);
+  margin-bottom: 48px;
+}
+
+p {
+  margin-bottom: 48px;
+}
 /* Buttons */
 .btn {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 1.5rem 2.5rem;
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
   background-color: var(--color-body-light);
