@@ -27,10 +27,12 @@ body {
   color: var(--color-body);
 }
 
+h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
   line-height: 1.1;
+  margin: 0;
 }
 
 /* Buttons */
@@ -40,6 +42,16 @@ h3 {
   text-transform: uppercase;
   padding: 2rem 3rem;
   border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-body-light);
+}
+
+.btn__small {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.8rem 2.6rem;
+  border: 1px solid var(--color-primary);
   color: var(--color-primary);
   background-color: var(--color-body-light);
 }
@@ -94,6 +106,10 @@ h3 {
   transition: ease-in 0.3s;
 }
 
+.list__padding {
+  padding: 5rem 0 4rem 0;
+}
+
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
@@ -108,4 +124,55 @@ h3 {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/* Navigation */
+.nav {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem 3rem;
+}
+
+.nav__list {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav__item > a {
+  color: var(--color-body-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.nav__item {
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__item + .nav__item {
+    margin-left: 2rem;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+  }
 }

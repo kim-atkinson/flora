@@ -13,40 +13,18 @@
     />
   </head>
   <body>
-    <div class="grid grid--cols-2">
-      <div class="collapsible collapsible--expanded">
-        <header class="collapsible__header">
-          <h2 class="collapsible__heading">Category</h2>
-          <span class="icon-container">
-            <svg class="icon collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </span>
-        </header>
-        <div class="collapsible__content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            est nemo quibusdam eos, eum debitis!
-          </p>
-        </div>
-      </div>
-      <div class="collapsible collapsible--expanded">
-        <header class="collapsible__header">
-          <h2 class="collapsible__heading">Category</h2>
-          <span class="icon-container">
-            <svg class="icon collapsible__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </span>
-        </header>
-        <div class="collapsible__content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            est nemo quibusdam eos, eum debitis!
-          </p>
-        </div>
-      </div>
-    </div>
+    <nav class="nav collapsible">
+      <a href="/"><img src="images/logo--light.svg" alt="" /></a>
+      <svg class="icon nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Menu</a></li>
+            <li class="nav__item"><a href="#"><button class="btn__small btn--accent">Reservations</button></a></li>
+            </li>
+      </ul>
+    </nav>
     <script src="js/main.js"></script>
   </body>
 </html>
