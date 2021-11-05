@@ -176,3 +176,22 @@ h3 {
     opacity: 1;
   }
 }
+
+/* Menu Header */
+
+.menu-header {
+  border: 2px solid var(--color-primary);
+  padding: 2rem;
+}
+
+.menu-inner {
+  border: 2px solid var(--color-primary);
+  padding: 3rem;
+  text-align: center;
+}
+
+.menu-heading {
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-size: 4.8rem;
+}
