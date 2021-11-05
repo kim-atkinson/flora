@@ -223,3 +223,26 @@ h3 {
 .footer__heading {
   text-transform: uppercase;
 }
+
+/* Banner */
+
+.banner {
+  background-image: url(../images/Banner.jpg);
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 1440px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__title {
+  font-size: 5.8rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
