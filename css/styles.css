@@ -72,6 +72,11 @@ h3 {
     grid-template-columns: 1fr 1fr;
     grid-gap: 100px;
   }
+
+  .grid--cols-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 100px;
+  }
 }
 
 /* Icons */
