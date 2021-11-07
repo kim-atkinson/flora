@@ -38,12 +38,40 @@ h3 {
 h3 {
   font-size: 4rem;
   color: var(--color-primary);
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
 }
 
 p {
-  margin-bottom: 48px;
+  margin-top: 0;
+  margin-bottom: 4rem;
 }
+
+.about__header {
+  margin-top: 2em;
+}
+
+.about__heading {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color-primary);
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.section__heading {
+  font-size: 2.4rem;
+  color: var(--color-primary);
+  margin: 0 0 2.4rem 0;
+}
+
+.content-wrap {
+  margin-top: 2em;
+}
+
+.content {
+  justify-content: center;
+}
+
 /* Buttons */
 .btn {
   font-size: 1.6rem;
@@ -53,6 +81,12 @@ p {
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
   background-color: var(--color-body-light);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
 
 .btn__small {
@@ -70,10 +104,19 @@ p {
   border: none;
 }
 
+.btn__small--ghost {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.2rem 2rem;
+  border: 1px solid var(--color-body-light);
+  background-color: transparent;
+  color: var(--color-body-light);
+}
 /* Grids */
 .grid {
   display: grid;
-  row-gap: 32px;
+  row-gap: 2.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -99,6 +142,7 @@ p {
 .icon {
   width: 32px;
   height: 32px;
+  fill: (--color-accent);
 }
 
 .icon__large {
@@ -203,6 +247,13 @@ p {
   }
 }
 
+/* Container */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* Menu Header */
 
 .menu-header {
@@ -224,13 +275,24 @@ p {
 
 /* Footer */
 
-.footer {
+footer {
   background-color: var(--color-secondary);
   color: #ffffff;
+  margin-top: 4.8rem;
+  padding: 2.4rem 0;
 }
 
 .footer__heading {
   text-transform: uppercase;
+  margin: 0 0 1.6rem 0;
+}
+
+.logo__footer {
+  margin-bottom: 2.4rem;
+}
+
+.icon {
+  margin-right: 2rem;
 }
 
 /* Banner */
@@ -239,10 +301,6 @@ p {
   background-image: url(../images/Banner.jpg);
   background-repeat: no-repeat;
   width: 100%;
-}
-
-.banner-image {
-  position: relative;
 }
 
 .overlay {
@@ -258,8 +316,16 @@ p {
   text-align: center;
 }
 
-.banner__title {
-  font-size: 5.8rem;
+.banner__title--one {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 2.4rem;
+}
+
+.banner__title--two {
+  font-size: 2.4rem;
   text-transform: uppercase;
   color: white;
   text-shadow: 1px 1px 1px #000;
@@ -269,6 +335,7 @@ p {
   position: relative;
   width: 100%;
 }
+
 img {
   display: block;
   width: 100%;

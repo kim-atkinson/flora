@@ -13,6 +13,128 @@
     />
   </head>
   <body>
-  
+    <header>
+      <nav class="nav collapsible">
+        <a href="/"><img src="images/logo--light.svg" alt="" /></a>
+        <svg class="icon nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+              <li class="nav__item"><a href="#">About</a></li>
+              <li class="nav__item"><a href="#">Menu</a></li>
+              <li class="nav__item"><a href="#"><button class="btn__small btn--accent">Reservations</button></a></li>
+              </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <img
+        src="images/restaurant-home/restaurant-home_300.jpg"
+        srcset="
+          images/restaurant-home/restaurant-home_300.jpg   300w,
+          images/restaurant-home/restaurant-home_932.jpg   932w,
+          images/restaurant-home/restaurant-home_1315.jpg 1315w,
+          images/restaurant-home/restaurant-home_1694.jpg 1694w
+        "
+        alt=""
+        class="img"
+      />
+    </section>
+    <main>
+      <section class="about container">
+        <header class="about__header">
+          <h2 class="about__heading">Delicious vegan cuisine in the heart of downtown toronto</h2>
+        </header>
+        <div class="content-wrap">
+          <div class="grid grid--cols-2">
+            <div><img src="images/lemon-cocktails.jpg" alt=""></div>
+            <div class="content">
+              <h3 class="section__heading">Relax with us</h3>
+              <p>
+                Flora is a new restaurant in the heart of Downtown Toronto. We specialize in
+                plant-based meals derived from the freshest ingredients.
+              </p>
+              <a href=""class="btn btn--light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        
 
+      </section>
+      <section class="menu container">
+        <div class="content-wrap">
+          <div class="grid grid--cols-2">
+            <div><img src="images/hummus-main.jpg" alt=""></div>
+            <div class="content">
+              <h3 class="section__heading">Experience Flora</h3>
+              <p>
+                Flora is a new restaurant in the heart of Downtown Toronto. We specialize in
+                plant-based meals derived from the freshest ingredients.
+              </p>
+              <a href=""class="btn btn--light">View Menu</a>
+            </div>
+          </div>
+        </div>
+        
+
+      </section>
+      <section class="reservations container">
+        <div class="content-wrap">
+          <div class="grid grid--cols-2">
+            <div><img src="images/restaurant-bar.jpg" alt=""></div>
+            <div class="content">
+              <h3 class="section__heading">Open Daily</h3>
+              <p>
+                Flora is a new restaurant in the heart of Downtown Toronto. We specialize in
+                plant-based meals derived from the freshest ingredients.
+              </p>
+              <a href=""class="btn btn--light">Make Reservations</a>
+            </div>
+          </div>
+        </div>
+        
+
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <svg class="icon__large logo__footer">
+          <use xlink:href="images/sprite.svg#logo--accent"></use>
+        </svg>
+        <div class="grid grid--cols-4">
+          <div class="col">
+            <h4 class="footer__heading">Location</h4>
+            <p class="footer__p">500 King Street West <br />Toronto, ON<br />M5V 1L8</p>
+          </div>
+          <div class="col">
+            <h4 class="footer__heading">Contact</h4>
+            <p class="footer__p">P: 416-578-2345<br />E: info@florarestaurant.ca<br /></p>
+          </div>
+          <div class="col">
+            <h4 class="footer__heading">Hours & Location</h4>
+            <p class="footer__p">
+              Monday - Friday | 5pm - 12am<br />Saturday - Sunday | 12pm - Late<br />
+            </p>
+          </div>
+          <div class="col">
+            <h4 class="footer__heading">Follow Us</h4>
+            <div class="social-wrap">
+              <a href="#"
+                ><svg class="icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use></svg
+              ></a>
+              <a href="#"
+                ><svg class="icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use></svg
+              ></a>
+              <a href="#"
+                ><svg class="icon icon--social">
+                  <use xlink:href="images/sprite.svg#twitter"></use></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
