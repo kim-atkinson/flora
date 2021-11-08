@@ -13,5 +13,33 @@
     />
   </head>
   <body>
-  
+    <header>
+      <nav class="nav collapsible">
+        <a href="/"><img src="images/logo--light.svg" alt="" /></a>
+        <svg class="icon nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+              <li class="nav__item"><a href="about.html">About</a></li>
+              <li class="nav__item"><a href="menu.html">Menu</a></li>
+              <li class="nav__item"><a href="reservations.html"><button class="btn__small btn--accent">Reservations</button></a></li>
+              </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <img
+        src="images/restaurant-reservations-hero/restaurant-reservations-hero_300.jpg"
+        srcset="
+          images/restaurant-reservations-hero/restaurant-reservations-hero_300.jpg   300w,
+          images/restaurant-reservations-hero/restaurant-reservations-hero_788.jpg   930w,
+          images/restaurant-reservations-hero/restaurant-reservations-hero_1119.jpg 1119w,
+          images/restaurant-reservations-hero/restaurant-reservations-hero_1400.jpg.jpg 1400w
+        "
+        alt=""
+        class="img"
+      />
+      <div class="overlay"><h2 class="hero-heading">Reservations</h2></div>
+    </section>
+  </body>
 </html>
