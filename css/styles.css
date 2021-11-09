@@ -161,6 +161,19 @@ p {
     column-gap: 3.2rem;
   }
 
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  .image-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    object-fit: cover;
+    height: 100%;
+  }
+
   .grid--cols-2 {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
@@ -348,7 +361,7 @@ p {
 footer {
   background-color: var(--color-secondary);
   color: #ffffff;
-  margin-top: 4.8rem;
+  margin-top: 8rem;
   padding: 2.4rem 0;
   font-size: 1.6rem;
 }
