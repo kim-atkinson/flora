@@ -140,6 +140,11 @@ p {
   border: none;
 }
 
+.btn--accent:hover {
+  color: var(--color-primary);
+  background-color: var(--color-body-light);
+}
+
 .btn__small--ghost {
   font-size: 1.6rem;
   font-weight: 500;
@@ -155,23 +160,23 @@ p {
   row-gap: 2.4rem;
 }
 
+.image-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1.6rem;
+}
+
+.image-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  object-fit: cover;
+  height: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .grid-form {
     grid-template-columns: 1fr 1fr;
     column-gap: 3.2rem;
-  }
-
-  .image-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 4rem;
-  }
-
-  .image-1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    object-fit: cover;
-    height: 100%;
   }
 
   .grid--cols-2 {
@@ -188,6 +193,9 @@ p {
     grid-gap: 10rem;
     row-gap: 5rem;
   }
+  .image-grid {
+    grid-gap: 3rem;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -198,7 +206,7 @@ p {
 
   .grid--cols-4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10rem;
+    grid-gap: 2rem;
   }
 }
 
@@ -248,7 +256,6 @@ p {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: all 0.3s;
 }
 
 .collapsible--expanded .collapsible__chevron {
