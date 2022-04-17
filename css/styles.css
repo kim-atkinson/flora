@@ -133,7 +133,6 @@ p {
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
   background-color: var(--color-body-light);
-  margin-left: 2rem;
 }
 
 .btn--accent {
