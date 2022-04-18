@@ -302,7 +302,7 @@ p {
   margin-bottom: 1.6rem;
 }
 
-.nav__item:hover {
+.nav__item > a:hover {
   color: var(--color-accent);
 }
 
