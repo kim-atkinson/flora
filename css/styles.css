@@ -361,6 +361,24 @@ p {
   font-size: 2.4rem;
 }
 
+.menu-heading__item {
+  margin-top: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.menu-price {
+  margin: 1.2rem 0 0 0;
+
+}
+
+.menu-description {
+  margin: 1.2rem 0 0 0;
+}
+
+div.title {
+  display: flex;
+  justify-content: space-between;
+}
 @media screen and (min-width: 768px) {
   .menu-inner {
     border: 2px solid var(--color-primary);
@@ -373,6 +391,14 @@ p {
   }
 }
 
+/* Menu */
+
+section.grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px 32px;
+  margin: 60px 0;
+}
 /* Footer */
 
 footer {
@@ -477,6 +503,10 @@ img {
   letter-spacing: 1px;
 }
 
+.hero-heading.dark {
+  color: var(--color-primary)
+}
+
 /* Media Queries  */
 
 @media screen and (min-width: 768px) {
@@ -539,6 +569,7 @@ img {
   text-transform: uppercase;
   margin: 0 0 2.4rem;
 }
+
 
 /* About */
 
